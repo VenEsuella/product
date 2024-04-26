@@ -13,7 +13,7 @@ class AddProductScreen extends StatefulWidget {
 class _AddProductScreenState extends State<AddProductScreen> {
   final TextEditingController _controller1 = TextEditingController();
   final TextEditingController _controller2 = TextEditingController();
-  final AddProductService _shoppingService = AddProductService();
+  final AddProductService _addProductService = AddProductService();
 
   @override
   Widget build(BuildContext context) {
@@ -57,7 +57,7 @@ class _AddProductScreenState extends State<AddProductScreen> {
             EdgeInsets.only(bottom: 16.0), // Memberikan ruang di bawah FAB
             child: FloatingActionButton(
               onPressed: () {
-                _shoppingService.addProductItem(
+                _addProductService.addProductItem(
                     _controller1.text, _controller2.text, context);
                 Navigator.push(
                   context,
