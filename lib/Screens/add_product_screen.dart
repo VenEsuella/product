@@ -54,7 +54,7 @@ class _AddProductScreenState extends State<AddProductScreen> {
           SizedBox(height: 1),
           Padding(
             padding:
-            EdgeInsets.only(bottom: 16.0), // Memberikan ruang di bawah FAB
+            EdgeInsets.only(bottom: 16.0),
             child: FloatingActionButton(
               onPressed: () {
                 _addProductService.addProductItem(
@@ -65,10 +65,10 @@ class _AddProductScreenState extends State<AddProductScreen> {
                 );
               },
               child: Icon(Icons.add),
-              backgroundColor: Colors.purple, // Ubah warna latar belakang FAB
-              elevation: 4, // Berikan efek bayangan pada FAB
+              backgroundColor: Colors.purple,
+              elevation: 4,
               splashColor:
-              Colors.white, // Ubah warna efek splash saat FAB ditekan
+              Colors.white,
             ),
           ),
         ],

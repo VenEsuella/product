@@ -19,7 +19,7 @@ class HomeScreen extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.only(
                   top: 16.0,
-                  right: 16.0), // Memberikan ruang di atas dan di kanan FAB
+                  right: 16.0),
               child: FloatingActionButton(
                 onPressed: () {
                   Navigator.push(
